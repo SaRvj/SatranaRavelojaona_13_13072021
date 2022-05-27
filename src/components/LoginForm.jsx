@@ -55,7 +55,7 @@ export default function LoginForm() {
     }, []);
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={HandleSubmit}>
             <div className="input-wrapper">
                 <label htmlFor="username">Username</label>
                 <input 
