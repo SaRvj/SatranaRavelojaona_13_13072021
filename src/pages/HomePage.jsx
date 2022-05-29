@@ -1,5 +1,5 @@
 import Feature from '../components/FeatureItem'
-import { featuresData } from '../data/data'
+import { featureData } from '../data/data'
 
 function HomePage() {
     return (
@@ -15,7 +15,7 @@ function HomePage() {
             </div>
             <section className='features'>
                 <h2 className='sr-only'>Features</h2>
-                {featuresData && featuresData.map((e, i) => (
+                {featureData && featureData.map((e, i) => (
                 <Feature key={i} src={e.imgSrc} alt={e.alt} title={e.title} text={e.text} />
                 ))}
             </section>

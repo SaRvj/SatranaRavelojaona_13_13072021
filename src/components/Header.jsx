@@ -1,7 +1,9 @@
 import ArgentBankLogo from "../assets/Images/argentBankLogo.png"
 import { Link } from "react-router-dom"
+import { selectUserLogin, selectFirstName } from "../utils/Selectors"
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from 'react-router-dom'
+import { logOut } from "../redux/Reducers"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightFromBracket, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 
