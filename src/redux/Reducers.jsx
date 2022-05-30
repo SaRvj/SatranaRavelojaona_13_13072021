@@ -7,6 +7,7 @@ export const updateUserData = createAction('updateUserData')
 
 
 const initialState = {
+    name: "userReducer",
     connected: false,
     JWTtoken: null,
     userData: {},
@@ -36,7 +37,6 @@ export default createReducer(initialState, (builder) =>
         }
     })
     .addCase(setUserData, (draft, userData) => {
-        console.log(userData);
         draft.userData = userData.payload
     })
     .addCase(updateUserData, (draft, userData) => {

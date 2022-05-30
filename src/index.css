@@ -296,6 +296,27 @@ body {
   font-size: 1.4em;
 }
 
+.close {
+  padding-left: 0.8em;
+  position: relative;
+  top: -0.8em;
+  right: -0.4em;
+}
+
+.change-zone {
+  margin: 0.5em;
+  padding: 0.4em;
+}
+
+.edit-container{
+  margin: 1em;
+}
+
+.change-lastname{
+  margin-right: 1em;
+}
+
+
 @media (min-width: 720px) {
   .account {
     flex-direction: row;
