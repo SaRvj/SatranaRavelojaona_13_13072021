@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
+.App{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -41,9 +47,11 @@ body {
   
 .main-nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
+  flex-shrink: 0;
 }
   
 .main-nav a {
@@ -69,7 +77,7 @@ body {
 }
   
 .main-nav-logo {
-  height: 90px;
+  height: 70px;
 }
   
   
@@ -210,6 +218,7 @@ body {
   justify-content: center;
   border-top: 2px solid #ccc;
   padding: 2rem 0 1.5rem;
+  flex-shrink: 0;
 }
   
 .footer-text {
@@ -293,7 +302,7 @@ body {
 .logged-container {
   display: flex;
   align-items: center;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .close {
@@ -316,6 +325,9 @@ body {
   margin-right: 1em;
 }
 
+.errorpage {
+  flex-shrink: 1;
+}
 
 @media (min-width: 720px) {
   .account {
@@ -329,4 +341,22 @@ body {
   .transaction-button {
     width: 200px;
   }
+
+  .logged-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+  }
+
+      
+  .main-nav-logo {
+    height: 90px;
+  }
+  
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+
 }
