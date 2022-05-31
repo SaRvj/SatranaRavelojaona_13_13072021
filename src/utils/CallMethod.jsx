@@ -2,7 +2,8 @@ import axios from "axios"
 
 class ApiCalls {
     async userLogIn(email, password, rememberMe) {
-        return await axios.post('http://localhost:3001/api/v1/user/login', {
+        console.log(email, password);
+        return axios.post('http://localhost:3001/api/v1/user/login', {
             "email": email,
             "password": password
         })

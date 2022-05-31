@@ -15,7 +15,7 @@ const initialState = {
 
 export default createReducer(initialState, (builder) =>
     builder
-    .addCase(logIn, (draft, JWTtoken) => { // 
+    .addCase(logIn, (draft, JWTtoken) => { 
         if (draft.connected === false) {
             draft.connected = true
             draft.JWTtoken = JWTtoken.payload
