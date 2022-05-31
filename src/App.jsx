@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom"
-import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
+import Footer from "./components/Footer"
+import HomePage from "./pages/HomePage"
 import "./index.css"
-import Header from "./components/Header";
-import Login from "./pages/Login";
-import Profile from "./pages/Profile";
+import Header from "./components/Header"
+import Login from "./pages/Login"
+import Profile from "./pages/Profile"
+import Error from "./pages/Error"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/argent-bank-app" element={<HomePage />}/>
             <Route path="/sign-in" element={<Login/>}/>
             <Route path="/user" element={<Profile/>}/>
+            <Route path="/*" element={<Error />}/>
           </Routes>
           < Footer />
 
