@@ -4,8 +4,6 @@ import { useDispatch, useSelector } from "react-redux"
 import ApiProvider from "../utils/CallMethod"
 import { updateUserData } from "../redux/Reducers"
 import { selectFirstName, selectJWT, selectLastName } from "../utils/Selectors"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons"
 
 function UserProfile() {
     let dispatch = useDispatch()
@@ -42,17 +40,19 @@ function UserProfile() {
                 <div className="edit-container">
                     <input className="change-zone" type="text" placeholder={firstName} onChange={(e) => setEditedFirstName(e.target.value)}/>
                     <input className="change-zone change-lastname" type="text" placeholder={lastName} onChange={(e) => setEditedLastName(e.target.value)}/>
-                    <button className="edit-button" onClick={() => handleChangeUserInfo(editedFirstName, editedLastName, JWTtoken)}>Validate</button>
+                    
                 </div>
             </div>
             )}
 
             {editInfo? (
-                <button className="edit-button" onClick={() => setEditInfo(!editInfo)}>
-                    Close edit
-                <FontAwesomeIcon icon={ faXmark } className="close"/>
-                </button>) : (
-                <button className="edit-button" onClick={() => setEditInfo(!editInfo)}>
+                <div className="editNameButton">
+                    <button className="edit-button" onClick={() => handleChangeUserInfo(editedFirstName, editedLastName, JWTtoken)}>Save</button>
+                    <button className="edit-button" onClick={() => setEditInfo(!editInfo)}>
+                        Cancel
+                    </button>
+                </div>) : (
+                <button className="editName-button" onClick={() => setEditInfo(!editInfo)}>
                     Edit name
                 </button>)
             } 
