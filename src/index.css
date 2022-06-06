@@ -297,9 +297,10 @@ body {
   font-size: 1.1rem;
   font-weight: bold;
   margin-top: 1rem;
-  border-color: #00bc77;
-  background-color: #00bc77;
+  border-color: #5b4df5;
+  background-color: #5b4df5;
   color: #fff;
+  border-radius: 0.2em;
 }
   
 .icon-sign {

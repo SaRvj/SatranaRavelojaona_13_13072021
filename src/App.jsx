@@ -6,6 +6,7 @@ import Header from "./components/Header"
 import Login from "./pages/Login"
 import Profile from "./pages/Profile"
 import Error from "./pages/Error"
+console.disableYellowBox = true;
 
 function App() {
   return (
@@ -19,7 +20,6 @@ function App() {
             <Route path="/*" element={<Error />}/>
           </Routes>
           < Footer />
-
       </div>
   );
 }

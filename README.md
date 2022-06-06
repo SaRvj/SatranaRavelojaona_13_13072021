@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ArgentBank
 
-## Available Scripts
+is a fresh new bank trying to break into the industry and wants to implement her APP In that way, two phases have been set up :
 
-In the project directory, you can run:
+-   Phase 1: User authentication
 
-### `npm start`
+The goal here was to transform a static HTML and CSS mock-up into a React responsive application. For this purpose, it was requested to use react as a state manager and respect several issues to achieve this.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   Phase 2: transactions We are here in a conception phase of a new feature that can allow users to view all their transactions for the current month, the details of a transaction in another view and to add, modify or delete information about a transaction.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+It's a question here of documenting the implementation of these functionalities on the API side by using the Swagger syntax.
 
-### `npm test`
+## Prerequisites for installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   [Node](https://nodejs.org/en/) v14.17.5
+-   [MongoDB Community Server](https://www.mongodb.com/try/download/community) v4.2.20
+-   Visual Studio Code or another IDE of your choice
 
-### `npm run build`
+## Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   [React](https://reactjs.org): v18.1.0
+-   [React-router-dom](https://reactrouter.com/web/guides/quick-start): v6.3.0
+-   [Redux](https://redux.js.org): v4.2.0
+-   [React-redux](https://react-redux.js.org): v8.0.2
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installing and lauching
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1 - Backend API
+ - Clone the Backend API on your computer: git clone [back-end of Argent Bank](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API)
+ - Follow the installation instructions carefully in the readme file provided.
+ - Launch the back-end with `yarn start` or `npm start` on [port 3001](localhost:3001)
 
-### `npm run eject`
+2 - Frontend App
+ - Clone the Frontend App on your computer:
+    git clone [front-end of Argent Bank](https://github.com/SaRvj/SatranaRavelojaona_13_13072021)
+ - Install the packages/dependencies : npm install
+ - Run the Frontend Api, which will then listen on port 3000 by default : npm start
+ - Launch the front-end with `yarn start` or `npm start` on [port 3000](localhost:3000)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Warning !** Currently only 2 users.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Tony Stark
+- First Name: `Tony`
+- Last Name: `Stark`
+- Email: `tony@stark.com`
+- Password: `password123`
+### Steve Rogers
+- First Name: `Steve`
+- Last Name: `Rogers`
+- Email: `steve@rogers.com`
+- Password: `password456`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-   Run the Frontend App, which will then listen on port 3000 by default with "yarn start" or "npm start"
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Satrana Ravelojaona
