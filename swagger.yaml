@@ -134,7 +134,7 @@ paths:
           schema:
             $ref: '#/definitions/TransactionsList'
         '400':
-          description: Requested not found
+          description: Invalid token
         '500':
           description: Internal Server Error
     post:
@@ -193,7 +193,7 @@ paths:
           schema:
             $ref: '#/definitions/Transaction'
         '400':
-          description: Requested not found
+          description: Invalid token
         '500':
           description: Internal Server Error
     put:
